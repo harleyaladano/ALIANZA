@@ -1,0 +1,33 @@
+.post-box {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.0); /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+  }
+  .post-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .comment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #faf8f8; /* Add this line */
+    padding: 10px; /* Add this line */
+    margin-bottom: 10px; /* Add this line */
+  }
+  
+  .button-container {
+    align-self: flex-end;
+  }
+  
+

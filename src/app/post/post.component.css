@@ -4,7 +4,7 @@
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.0); /* Semi-transparent background */
+    background: rgba(145, 7, 7, 0); /* Semi-transparent background */
     backdrop-filter: blur(10px);
   }
   .post-box img {

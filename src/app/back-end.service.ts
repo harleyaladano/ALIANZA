@@ -36,4 +36,5 @@ export class BackEndService {
         this.postService.listChangedEvent.emit(listofPosts);
       }));
   }
+
 }

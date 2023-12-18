@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Post } from '../post.model';
 import { PostService } from '../post.service';
 import { Router } from '@angular/router';
+import { BackEndService } from '../back-end.service';
 
 @Component({
   selector: 'app-post',
@@ -12,7 +13,7 @@ export class PostComponent implements OnInit {
   commentInput: any;
   memberName = "KING OG";
 
-  constructor(private postService: PostService, private router: Router) {
+  constructor(private postService: PostService, private router: Router, private backendservice:BackEndService) {
   }
   @Input() index: number = 0;
   @Input() post?: Post;
@@ -24,10 +25,12 @@ export class PostComponent implements OnInit {
   }
   delete() {
     this.postService.deleteButton(this.index);
+    this.backendservice.saveData();
   }
   
   onEdit() {
-    this.router.navigate(['/post-edit', this.index])
+    this.router.navigate(['/post-edit', this.index]);
+    this.backendservice.saveData();
   }
   onLike() {
     this.postService.likePost(this.index)

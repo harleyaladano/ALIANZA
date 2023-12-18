@@ -1,3 +1,7 @@
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
   border: 1px solid #d44d09;
 }
+.container{
+  border: solid 1px #ffff;
+  padding: 70px;
+}
